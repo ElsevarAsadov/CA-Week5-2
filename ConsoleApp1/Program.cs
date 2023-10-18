@@ -15,7 +15,7 @@
 
 
             //TASK1
-            Console.WriteLine("Salam BB206, necəsiniz BB206 əhli ".MatchWordCount("BB206") == 2);
+            Console.WriteLine("Salam BB206, necəsiniz BB206əhli ".MatchWordCount("BB206", false));
             Console.WriteLine("Salam BB206, necəsiniz BB206əhli ".MatchWordCount("BB206", true) == 2);
 
             Console.WriteLine("BB206 BB206 fgfgfgfgBB206gfgfgf gfgfgBB206  BB206 ".MatchWordCount("BB206", true) == 5);

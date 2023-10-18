@@ -1,4 +1,4 @@
-﻿using System;
+﻿﻿using System;
 using System.Text.RegularExpressions;
 
 namespace IDK2
@@ -44,7 +44,7 @@ namespace IDK2
 
                         if (i + 1 < originalStr.Length && originalStr[i + 1] == ' ')
                         {
-                            count++;
+                            if(i+2 < originalStr.Length - 2 && Char.IsLetter(originalStr[i+2])) count++;
                         }
 
 
@@ -52,7 +52,7 @@ namespace IDK2
                         else
                         {
                             currentStack = "";
-                            count++;
+                            if (i + 2 < originalStr.Length - 2 && Char.IsLetter(originalStr[i + 2]))  count++;
                             cursor = 0;
                         }
 
